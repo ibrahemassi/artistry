@@ -1,10 +1,316 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!-- <meta http-equiv="refresh" content="0; url=home/index.html"> -->
-    <title>Redirecting...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistry.bysara - Your Premium Stationery Store</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Home Specific Styles */
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://picsum.photos/seed/hero/1200/600');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+            position: relative;
+            color: white;
+            text-align: center;
+        }
+        .hero-content {
+            max-width: 800px;
+            padding: 20px;
+            z-index: 2;
+        }
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.1;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero-content p {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .features-strip {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.9rem;
+        }
+
+        .promo-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .promo-card {
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+        }
+        .promo-card img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            filter: brightness(0.7);
+        }
+        .promo-card-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .section-header {
+            text-align: center;
+            margin: 60px 0 40px;
+        }
+        .section-header h2 {
+            font-size: 2rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background: var(--color-4);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .deal-banner {
+            background: #d1d1eb;
+            padding: 80px 0;
+            text-align: center;
+            margin: 60px 0;
+            background-image: url('https://picsum.photos/seed/deal/1200/400');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .deal-content {
+            background: rgba(0,0,0,0.4);
+            display: inline-block;
+            padding: 40px;
+        }
+    </style>
 </head>
 <body>
-    <p>Redirecting to <a href="home/index.html">Home</a>...</p>
+    <div class="top-bar">
+        <div class="container">
+            <div>Call: +62 822-2170-9736</div>
+            <div>Summer Sale Discount <span style="color: var(--color-3);">20% OFF</span></div>
+            <div>English | USD | Find A Store</div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-main">
+                <a href="index.html" class="logo">
+                    <img src="../assets/logo.png" alt="Artistry.bysara Logo">
+                    Artistry.bysara
+                </a>
+                <form class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button type="submit">🔍</button>
+                </form>
+                <div class="header-icons">
+                    <span>LOGIN / REGISTER</span>
+                    <span>🛒 0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <div class="container">
+            <ul>
+                <li><a href="../items/items.html">Browse Categories</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="../items/items.html">Shop</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p style="color: var(--color-2); font-weight: bold; margin-bottom: 10px; font-size: 1.2rem;">NEW ARRIVALS</p>
+                <h1>Stock Up Your Desk With Our 3 For 2 Stationery</h1>
+                <a href="../items/items.html" class="btn btn-primary" style="margin-top: 20px;">Shop Now</a>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="features-strip">
+                <div class="feature-item"><span>🚚</span> Free Delivery</div>
+                <div class="feature-item"><span>💳</span> Safe Payment</div>
+                <div class="feature-item"><span>🎁</span> Surprise Coupons</div>
+                <div class="feature-item"><span>📞</span> Quality Support</div>
+            </div>
+
+            <div class="promo-grid">
+                <div class="promo-card">
+                    <img src="https://picsum.photos/seed/promo1/400/300" alt="Promo 1">
+                    <div class="promo-card-content">
+                        <h3>Home Office Desks</h3>
+                        <a href="../items/items.html" class="btn btn-outline" style="color: white; border-color: white;">Shop Now</a>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="https://picsum.photos/seed/promo2/400/300" alt="Promo 2">
+                    <div class="promo-card-content">
+                        <h3>Notebooks & Pens</h3>
+                        <a href="../items/items.html" class="btn btn-outline" style="color: white; border-color: white;">Shop Now</a>
+                    </div>
+                </div>
+                <div class="promo-card">
+                    <img src="https://picsum.photos/seed/promo3/400/300" alt="Promo 3">
+                    <div class="promo-card-content">
+                        <h3>Art Supplies</h3>
+                        <a href="../items/items.html" class="btn btn-outline" style="color: white; border-color: white;">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-header">
+                <h2>Featured Products</h2>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <a href="../item-details/item-1.html">
+                        <img src="https://picsum.photos/seed/p1/300/300" alt="Product 1">
+                        <h3>Durable Concrete Pants</h3>
+                        <div class="price">$63.51</div>
+                    </a>
+                    <button class="btn btn-primary" style="margin-top: 15px; width: 100%;">Add to Cart</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <a href="../item-details/item-2.html">
+                        <img src="https://picsum.photos/seed/p2/300/300" alt="Product 2">
+                        <h3>Mediocre Iron Shoes</h3>
+                        <div class="price">$56.22</div>
+                    </a>
+                    <button class="btn btn-primary" style="margin-top: 15px; width: 100%;">Add to Cart</button>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <a href="../item-details/item-3.html">
+                        <img src="https://picsum.photos/seed/p3/300/300" alt="Product 3">
+                        <h3>Ergonomic Cotton Bench</h3>
+                        <div class="price">$749.62</div>
+                    </a>
+                    <button class="btn btn-primary" style="margin-top: 15px; width: 100%;">Add to Cart</button>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <a href="../item-details/item-4.html">
+                        <img src="https://picsum.photos/seed/p4/300/300" alt="Product 4">
+                        <h3>Practical Cotton Knife</h3>
+                        <div class="price">$95.00</div>
+                    </a>
+                    <button class="btn btn-primary" style="margin-top: 15px; width: 100%;">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="deal-banner">
+            <div class="deal-content" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                <img src="../assets/logo.png" alt="Artistry.bysara Logo" style="height: 120px; width: auto; margin-bottom: 20px;">
+                <h2>Artistry.bysara</h2>
+                <p style="font-size: 1.2rem; margin: 20px 0;">Handcrafted Stationery & Art Supplies</p>
+                <a href="../items/items.html" class="btn btn-primary">Explore Our Collection</a>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Subscribe And Get 20% Off Your First Purchase.</h2>
+                <form>
+                    <input type="email" placeholder="Enter Your Email Address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="index.html" class="logo" style="color: white; margin-bottom: 20px;">
+                        <img src="../assets/logo.png" alt="Artistry.bysara Logo" style="height: 40px; width: auto;">
+                        Artistry.bysara
+                    </a>
+                    <p style="margin-top: 20px;">We Provide All Your Gifting Needs Are Always On Our Minds!</p>
+                    <!-- <div style="margin-top: 20px;">f t i y</div> -->
+                </div>
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Delivery Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="../items/items.html">Shop</a></li>
+                        <li><a href="#">Blog News</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Selling</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Need Help</h4>
+                    <ul>
+                        <li>📞 +62 822-2170-9736</li>
+                        <li>⏰ Monday - Friday: 9:00 - 20:00</li>
+                        <li>✉️ artistrybysara@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>Copyright © 2026 Artistry.bysara. All rights reserved.</div>
+                <div>SPANISH | ENGLISH | FRENCH</div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
