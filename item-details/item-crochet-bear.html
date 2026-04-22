@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crochet Teddy Bear - Artistry.bysara</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .product-detail-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin: 40px 0;
+        }
+
+        .product-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        .gallery-main {
+            grid-column: span 2;
+        }
+        .product-gallery img {
+            width: 100%;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        .product-info h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .detail-price {
+            font-size: 1.8rem;
+            color: var(--accent);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .product-meta {
+            margin: 30px 0;
+            padding: 20px 0;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+        .product-meta div {
+            margin-bottom: 10px;
+        }
+
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .qty-input {
+            display: flex;
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .qty-input button {
+            padding: 10px 15px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .qty-input input {
+            width: 40px;
+            text-align: center;
+            border: none;
+            border-left: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+        }
+
+        .tabs-section {
+            margin: 60px 0;
+        }
+        .tabs-header {
+            display: flex;
+            gap: 40px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 30px;
+        }
+        .tab-item {
+            padding: 15px 0;
+            font-weight: bold;
+            cursor: pointer;
+            position: relative;
+        }
+        .tab-item.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--accent);
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div>Call: +62 822-2170-9736</div>
+            <div>Summer Sale Discount <span style="color: var(--color-3);">20% OFF</span></div>
+            <div>English | USD | Find A Store</div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-main">
+                <a href="../home/index.html" class="logo">
+                    <img src="../assets/logo.png" alt="Artistry.bysara Logo">
+                    Artistry.bysara
+                </a>
+                <form class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button type="submit">🔍</button>
+                </form>
+                <div class="header-icons">
+                    <span>LOGIN / REGISTER</span>
+                    
+                    <span>🛒 0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <div class="container">
+            <ul>
+                <li><a href="../items/items.html">Browse Categories</a></li>
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="../items/items.html">Shop</a></li>
+                <li><a href="#">Pages</a></li>
+                
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div style="margin-top: 20px; font-size: 0.8rem; color: #888;">
+            Home > Shop > Crochet > Crochet Teddy Bear
+        </div>
+
+        <div class="product-detail-layout">
+            <div class="product-gallery">
+                <div class="gallery-main">
+                    <img src="https://picsum.photos/seed/bear/600/600" alt="Crochet Teddy Bear">
+                </div>
+            </div>
+
+            <div class="product-info">
+                <h1>Crochet Teddy Bear</h1>
+                <div class="detail-price">$35.00</div>
+                
+                <p>Beautifully handcrafted Crochet Teddy Bear. Each piece is unique and made with love by Sara.</p>
+
+                <div class="product-meta">
+                    <div><strong>Category:</strong> Crochet</div>
+                    <div><strong>Availability:</strong> In Stock / Made to Order</div>
+                </div>
+
+                <div class="quantity-selector">
+                    <div class="qty-input">
+                        <button>-</button>
+                        <input type="text" value="1">
+                        <button>+</button>
+                    </div>
+                    <button class="btn btn-primary">ADD TO CART</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs-section">
+            <div class="tabs-header">
+                <div class="tab-item active">Description</div>
+                <div class="tab-item">Shipping Info</div>
+            </div>
+            <div class="tab-content">
+                <p>This Crochet Teddy Bear is part of our Crochet collection. We use high-quality materials to ensure that every item is both beautiful and durable.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../home/index.html" class="logo" style="color: white; margin-bottom: 20px;">
+                        <img src="../assets/logo.png" alt="Artistry.bysara Logo" style="height: 40px; width: auto;">
+                        Artistry.bysara
+                    </a>
+                    <p style="margin-top: 20px;">Handcrafted Art & Stationery by Sara.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="../items/items.html">All Items</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Need Help</h4>
+                    <ul>
+                        <li>✉️ Artistry.bysara@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>Copyright © 2026 Artistry.bysara. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

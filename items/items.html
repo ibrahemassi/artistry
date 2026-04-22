@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Artistry.bysara</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        .shop-layout {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        .sidebar-widget h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        .sidebar-widget ul li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+        .sidebar-widget ul li:hover {
+            color: var(--accent);
+        }
+
+        /* Product List */
+        .shop-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: white;
+            border: 1px solid var(--border);
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+        }
+
+        .product-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container">
+            <div>Call: +62 822-2170-9736</div>
+            <div>Summer Sale Discount <span style="color: var(--color-3);">20% OFF</span></div>
+            <div>English | USD | Find A Store</div>
+        </div>
+    </div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-main">
+                <a href="../home/index.html" class="logo">
+                    <img src="../assets/logo.png" alt="Artistry.bysara Logo">
+                    Artistry.bysara
+                </a>
+                <form class="search-bar">
+                    <input type="text" placeholder="Search products...">
+                    <button type="submit">🔍</button>
+                </form>
+                <div class="header-icons">
+                    <span>LOGIN / REGISTER</span>
+                    <span>🛒 0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <div class="container">
+            <ul>
+                <li><a href="items.html">Browse Categories</a></li>
+                <li><a href="../home/index.html">Home</a></li>
+                <li><a href="items.html">Shop</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div style="margin-top: 20px; font-size: 0.8rem; color: #888;">
+            Home > Shop
+        </div>
+
+        <div class="shop-layout">
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3>Graphic</h3>
+                    <ul>
+                        <li>Bookmarks</li>
+                        <li>Greeting Cards</li>
+                        <li>Calendars</li>
+                        <li>Notebooks</li>
+                        <li>Illustrations</li>
+                        <li>Posters</li>
+                        <li>Logos</li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Art on Canvas</h3>
+                    <ul>
+                        <li>Acrylic Paint</li>
+                        <li>Oil Paint</li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Crochet</h3>
+                    <ul>
+                        <li>Flowers</li>
+                        <li>Hearts</li>
+                        <li>Teddy Bears</li>
+                        <li>Chains</li>
+                    </ul>
+                </div>
+                <div class="sidebar-widget">
+                    <h3>Candles</h3>
+                </div>
+            </aside>
+
+            <main class="shop-content">
+                <div class="shop-toolbar">
+                    <div>Showing all items</div>
+                    <div>
+                        Sort by: 
+                        <select style="padding: 5px; border: 1px solid var(--border);">
+                            <option>Default sorting</option>
+                            <option>Price: low to high</option>
+                            <option>Price: high to low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="product-list-grid">
+                    <!-- Graphic Items -->
+                    <div class="product-card">
+                        <a href="../item-details/item-bookmark.html">
+                            <img src="https://picsum.photos/seed/bookmark/400/500" alt="Handmade Bookmark">
+                            <h3>Handmade Bookmark</h3>
+                            <div class="price">$5.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="../item-details/item-card.html">
+                            <img src="https://picsum.photos/seed/card/400/500" alt="Kel Shi Card">
+                            <h3>Kel Shi Card</h3>
+                            <div class="price">$8.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="../item-details/item-calendar.html">
+                            <img src="https://picsum.photos/seed/calendar/400/500" alt="Artistic Calendar">
+                            <h3>Artistic Calendar</h3>
+                            <div class="price">$25.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="../item-details/item-notebook.html">
+                            <img src="https://picsum.photos/seed/notebook/400/500" alt="Hand-painted Notebook">
+                            <h3>Hand-painted Notebook</h3>
+                            <div class="price">$15.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="../item-details/item-illustration.html">
+                            <img src="https://picsum.photos/seed/illustration/400/500" alt="Custom Illustration">
+                            <h3>Custom Illustration</h3>
+                            <div class="price">$45.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="../item-details/item-poster.html">
+                            <img src="https://picsum.photos/seed/poster/400/500" alt="Art Poster">
+                            <h3>Art Poster</h3>
+                            <div class="price">$20.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+
+                    <!-- Art on Canvas -->
+                    <div class="product-card">
+                        <a href="../item-details/item-acrylic.html">
+                            <img src="https://picsum.photos/seed/acrylic/400/500" alt="Acrylic Canvas Painting">
+                            <h3>Acrylic Canvas Painting</h3>
+                            <div class="price">$120.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="../item-details/item-oil.html">
+                            <img src="https://picsum.photos/seed/oil/400/500" alt="Oil Canvas Painting">
+                            <h3>Oil Canvas Painting</h3>
+                            <div class="price">$250.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+
+                    <!-- Crochet -->
+                    <div class="product-card">
+                        <a href="../item-details/item-crochet-flower.html">
+                            <img src="https://picsum.photos/seed/flower/400/500" alt="Crochet Flower">
+                            <h3>Crochet Flower</h3>
+                            <div class="price">$12.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="../item-details/item-crochet-heart.html">
+                            <img src="https://picsum.photos/seed/heart/400/500" alt="Crochet Heart">
+                            <h3>Crochet Heart</h3>
+                            <div class="price">$10.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <a href="../item-details/item-crochet-bear.html">
+                            <img src="https://picsum.photos/seed/bear/400/500" alt="Crochet Teddy Bear">
+                            <h3>Crochet Teddy Bear</h3>
+                            <div class="price">$35.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+
+                    <!-- Candles -->
+                    <div class="product-card">
+                        <a href="../item-details/item-candle.html">
+                            <img src="https://picsum.photos/seed/candle/400/500" alt="Handmade Candle">
+                            <h3>Handmade Candle</h3>
+                            <div class="price">$18.00</div>
+                        </a>
+                        <button class="btn btn-primary">Add to Cart</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="../home/index.html" class="logo" style="color: white; margin-bottom: 20px;">
+                        <img src="../assets/logo.png" alt="Artistry.bysara Logo" style="height: 40px; width: auto;">
+                        Artistry.bysara
+                    </a>
+                    <p style="margin-top: 20px;">Handcrafted Art & Stationery by Sara.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Delivery Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="items.html">All Items</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Need Help</h4>
+                    <ul>
+                        <li>📞 +62 822-2170-9736</li>
+                        <li>✉️ Artistry.bysara@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div>Copyright © 2026 Artistry.bysara. All rights reserved.</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
