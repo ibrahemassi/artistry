@@ -317,7 +317,11 @@ img {
         grid-template-columns: 1fr;
     }
     .shop-layout {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Sidebar stacks on top */
+    }
+    .sidebar {
+        width: 100%;
+        margin-bottom: 30px;
     }
     .product-detail-layout {
         grid-template-columns: 1fr;
