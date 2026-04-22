@@ -317,11 +317,18 @@ img {
         grid-template-columns: 1fr;
     }
     .shop-layout {
-        grid-template-columns: 1fr; /* Sidebar stacks on top */
+        grid-template-columns: 120px 1fr; /* Much smaller sidebar on mobile */
+        gap: 10px;
+    }
+    .sidebar-widget h3 {
+        font-size: 0.8rem; /* Smaller widget titles */
+    }
+    .sidebar-widget ul li {
+        font-size: 0.7rem; /* Smaller list items */
     }
     .sidebar {
-        width: 100%;
-        margin-bottom: 30px;
+        width: auto;
+        margin-bottom: 0;
     }
     .product-detail-layout {
         grid-template-columns: 1fr;
